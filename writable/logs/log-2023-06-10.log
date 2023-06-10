@@ -1,0 +1,1108 @@
+ERROR - 2023-06-10 13:31:56 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'productos', 3306, '', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-10 13:35:22 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'productos', 3306, '', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-10 13:36:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'productos', 3306, '', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-10 13:39:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'productos', 3306, '', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-10 13:40:50 --> mysqli_sql_exception: Invalid default value for 'fecha' in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 F:\xampp\htdocs\CI\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 F:\xampp\htdocs\CI\app\Database\Migrations\2023-06-10-132753_DetallesDeProductos.php(47): CodeIgniter\Database\Forge->createTable('detalles_produc...')
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(877): App\Database\Migrations\DetallesDeProductos->up()
+#6 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-06-10 13:42:32 --> mysqli_sql_exception: Invalid default value for 'fecha' in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 F:\xampp\htdocs\CI\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 F:\xampp\htdocs\CI\app\Database\Migrations\2023-06-10-132753_DetallesDeProductos.php(47): CodeIgniter\Database\Forge->createTable('detalles_produc...')
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(877): App\Database\Migrations\DetallesDeProductos->up()
+#6 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-06-10 13:44:34 --> mysqli_sql_exception: Invalid default value for 'fecha' in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 F:\xampp\htdocs\CI\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 F:\xampp\htdocs\CI\app\Database\Migrations\2023-06-10-132753_DetallesDeProductos.php(47): CodeIgniter\Database\Forge->createTable('detalles_produc...')
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(877): App\Database\Migrations\DetallesDeProductos->up()
+#6 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-06-10 13:46:33 --> mysqli_sql_exception: Invalid default value for 'fecha' in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 F:\xampp\htdocs\CI\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 F:\xampp\htdocs\CI\app\Database\Migrations\2023-06-10-132753_DetallesDeProductos.php(47): CodeIgniter\Database\Forge->createTable('detalles_produc...')
+#5 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(877): App\Database\Migrations\DetallesDeProductos->up()
+#6 F:\xampp\htdocs\CI\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 F:\xampp\htdocs\CI\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-06-10 14:17:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2) VALUES (:0:, :1:, :2:)' at line 1 in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 F:\xampp\htdocs\CI\app\Database\Seeds\categoriasSeed.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\CI\system\Database\Seeder.php(146): App\Database\Seeds\categoriasSeed->run()
+#6 F:\xampp\htdocs\CI\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 F:\xampp\htdocs\CI\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 F:\xampp\htdocs\CI\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 F:\xampp\htdocs\CI\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2023-06-10 15:37:31 --> Invalid file: "../WebBody/Header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../WebBody/Header.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('../WebBody/Header', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(11): view('../WebBody/Header')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 15:38:36 --> Invalid file: ".../WebBody/Header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.../WebBody/Header.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('.../WebBody/Header', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(11): view('.../WebBody/Header')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 15:38:57 --> Invalid file: ".../WebBody/Header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.../WebBody/Header.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('.../WebBody/Header', [], true)
+ 3 APPPATH\Controllers\CategoriasController.php(11): view('.../WebBody/Header')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 15:49:05 --> Undefined variable $datos
+in APPPATH\Views\Categorias\lista.php on line 2.
+ 1 APPPATH\Views\Categorias\lista.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Categorias\\lista.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Categorias\\lista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Categorias/lista', [], true)
+ 5 APPPATH\Controllers\CategoriasController.php(25): view('Categorias/lista')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->categorias()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 15:49:51 --> Undefined variable $datos
+in APPPATH\Views\Categorias\lista.php on line 2.
+ 1 APPPATH\Views\Categorias\lista.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Categorias\\lista.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Categorias\\lista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Categorias/lista', [], true)
+ 5 APPPATH\Controllers\CategoriasController.php(25): view('Categorias/lista')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->categorias()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 15:49:57 --> Undefined constant "aaaa"
+in APPPATH\Views\Categorias\lista.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Categorias/lista', [], true)
+ 4 APPPATH\Controllers\CategoriasController.php(25): view('Categorias/lista')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CategoriasController->categorias()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriasController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 16:20:20 --> Undefined variable $resultados
+in APPPATH\Views\Inicio\index.php on line 18.
+ 1 APPPATH\Views\Inicio\index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultados', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(17): view('Inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 16:27:31 --> Undefined variable $fila
+in APPPATH\Views\Inicio\index.php on line 28.
+ 1 APPPATH\Views\Inicio\index.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fila', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(17): view('Inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 16:27:32 --> Undefined variable $fila
+in APPPATH\Views\Inicio\index.php on line 28.
+ 1 APPPATH\Views\Inicio\index.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fila', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(17): view('Inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:07:57 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:07:59 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:08:04 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:08:12 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:08:13 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:08:38 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:09:10 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:09:24 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:09:46 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:09:59 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:10:03 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:14:08 --> Undefined variable $variable
+in APPPATH\Views\Inicio\agregarProducto.php on line 21.
+ 1 APPPATH\Views\Inicio\agregarProducto.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $variable', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:33:15 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\agregarProducto.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(33): view('Inicio/agregarProducto', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 17:42:34 --> Undefined property: stdClass::$id
+in APPPATH\Views\Inicio\agregarProducto.php on line 17.
+ 1 APPPATH\Views\Inicio\agregarProducto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(38): view('Inicio/agregarProducto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->AgregarProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:10:17 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 45.
+ 1 APPPATH\Controllers\ProductosController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:18:50 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:19:41 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:23:45 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:25:38 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:26:06 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:29:04 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:29:16 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:30:38 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:31:20 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:34:29 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:54:38 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:55:02 --> Undefined property: App\Controllers\ProductosController::$input
+in APPPATH\Controllers\ProductosController.php on line 51.
+ 1 APPPATH\Controllers\ProductosController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$input', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:55:03 --> Undefined property: App\Controllers\ProductosController::$input
+in APPPATH\Controllers\ProductosController.php on line 51.
+ 1 APPPATH\Controllers\ProductosController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$input', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:55:04 --> Undefined property: App\Controllers\ProductosController::$input
+in APPPATH\Controllers\ProductosController.php on line 51.
+ 1 APPPATH\Controllers\ProductosController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$input', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 18:55:05 --> Undefined property: App\Controllers\ProductosController::$input
+in APPPATH\Controllers\ProductosController.php on line 51.
+ 1 APPPATH\Controllers\ProductosController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$input', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:01:35 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:02:55 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:02:56 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:04:16 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 APPPATH\Controllers\ProductosController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:06:17 --> Class "App\Controllers\ProductosModels" not found
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:06:18 --> Class "App\Controllers\ProductosModels" not found
+in APPPATH\Controllers\ProductosController.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:07:04 --> Declaration of App\Models\ProductosModels::insert($datos) must be compatible with CodeIgniter\Model::insert($data = null, bool $returnID = true)
+in APPPATH\Models\ProductosModels.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-10 19:07:05 --> Declaration of App\Models\ProductosModels::insert($datos) must be compatible with CodeIgniter\Model::insert($data = null, bool $returnID = true)
+in APPPATH\Models\ProductosModels.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-10 19:08:47 --> Undefined property: App\Controllers\ProductosController::$ProductosModels
+in APPPATH\Controllers\ProductosController.php on line 73.
+ 1 APPPATH\Controllers\ProductosController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$ProductosModels', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:09:05 --> Undefined property: App\Controllers\ProductosController::$ProductosModels
+in APPPATH\Controllers\ProductosController.php on line 73.
+ 1 APPPATH\Controllers\ProductosController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$ProductosModels', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:10:46 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 48.
+ 1 APPPATH\Controllers\ProductosController.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:13:21 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 48.
+ 1 APPPATH\Controllers\ProductosController.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:16:02 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 48.
+ 1 APPPATH\Controllers\ProductosController.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:18:33 --> Undefined property: App\Controllers\ProductosController::$load
+in APPPATH\Controllers\ProductosController.php on line 48.
+ 1 APPPATH\Controllers\ProductosController.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$load', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:25:20 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:25:48 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:28:53 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:28:54 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:29:05 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:29:06 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:29:17 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:29:18 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:29:50 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:29:51 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:30:00 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:30:01 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:30:16 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:30:17 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\ProductosController.php on line 92.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:30:20 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\ProductosController.php on line 92.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:30:23 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\ProductosController.php on line 92.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:30:55 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:31:07 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:31:08 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:32:19 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:32:56 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:33:56 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('Save', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:36:33 --> Undefined variable $model
+in APPPATH\Controllers\ProductosController.php on line 72.
+ 1 APPPATH\Controllers\ProductosController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:36:42 --> Undefined variable $model
+in APPPATH\Controllers\ProductosController.php on line 72.
+ 1 APPPATH\Controllers\ProductosController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:37:42 --> Undefined variable $model
+in APPPATH\Controllers\ProductosController.php on line 73.
+ 1 APPPATH\Controllers\ProductosController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:37:52 --> Undefined variable $model
+in APPPATH\Controllers\ProductosController.php on line 73.
+ 1 APPPATH\Controllers\ProductosController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:40:13 --> Declaration of App\Models\ProductosModels::insert($datos) must be compatible with CodeIgniter\Model::insert($data = null, bool $returnID = true)
+in APPPATH\Models\ProductosModels.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-10 19:40:32 --> Declaration of App\Models\ProductosModels::insert($datos) must be compatible with CodeIgniter\Model::insert($data = null, bool $returnID = true)
+in APPPATH\Models\ProductosModels.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-10 19:44:01 --> Declaration of App\Models\ProductosModels::insert($datos) must be compatible with CodeIgniter\Model::insert($data = null, bool $returnID = true)
+in APPPATH\Models\ProductosModels.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-10 19:49:51 --> Declaration of App\Models\ProductosModels::insert($datos) must be compatible with CodeIgniter\Model::insert($data = null, bool $returnID = true)
+in APPPATH\Models\ProductosModels.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-10 19:53:48 --> Unclosed '{' on line 10
+in APPPATH\Controllers\ProductosController.php on line 89.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:56:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\ProductosModels.php on line 21.
+ 1 APPPATH\Controllers\ProductosController.php(75): App\Models\ProductosModels->guardar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 19:59:49 --> Undefined property: App\Controllers\ProductosController::$ProductosModels
+in APPPATH\Controllers\ProductosController.php on line 73.
+ 1 APPPATH\Controllers\ProductosController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProductosController::$ProductosModels', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:01:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::save()
+in APPPATH\Models\ProductosModels.php on line 21.
+ 1 APPPATH\Controllers\ProductosController.php(73): App\Models\ProductosModels->guardar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:02:12 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\ProductosModels.php on line 21.
+ 1 APPPATH\Controllers\ProductosController.php(73): App\Models\ProductosModels->guardar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:02:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\ProductosModels.php on line 21.
+ 1 APPPATH\Controllers\ProductosController.php(73): App\Models\ProductosModels->guardar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:05:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\ProductosModels.php on line 30.
+ 1 APPPATH\Controllers\ProductosController.php(73): App\Models\ProductosModels->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:09:33 --> Too few arguments to function App\Models\ProductosModels::guardar(), 0 passed in F:\xampp\htdocs\CI\app\Controllers\ProductosController.php on line 73 and exactly 1 expected
+in APPPATH\Models\ProductosModels.php on line 20.
+ 1 APPPATH\Controllers\ProductosController.php(73): App\Models\ProductosModels->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:12:55 --> Call to undefined function App\Controllers\AgregarProductos()
+in APPPATH\Controllers\ProductosController.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:13:58 --> Undefined variable $data
+in APPPATH\Controllers\ProductosController.php on line 78.
+ 1 APPPATH\Controllers\ProductosController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:14:24 --> Undefined variable $datos
+in APPPATH\Views\Inicio\agregarProducto.php on line 16.
+ 1 APPPATH\Views\Inicio\agregarProducto.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(78): view('Inicio/agregarProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-10 20:27:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`productos`.`productos`, CONSTRAINT `productos_idCa_foreign` FOREIGN KEY (`idCa`) REFERENCES `categorias` (`idCa`) ON DELETE CASCADE ON UPDATE CASCADE) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 F:\xampp\htdocs\CI\app\Models\ProductosModels.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\CI\app\Controllers\ProductosController.php(73): App\Models\ProductosModels->guardar(Array)
+#6 F:\xampp\htdocs\CI\system\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+#7 F:\xampp\htdocs\CI\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+#8 F:\xampp\htdocs\CI\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\CI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-10 20:27:45 --> Cannot add or update a child row: a foreign key constraint fails (`productos`.`productos`, CONSTRAINT `productos_idCa_foreign` FOREIGN KEY (`idCa`) REFERENCES `categorias` (`idCa`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'sdadasdasd\', \'asdadas\', \'123123\', \'123\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'sdadasdasd\', \'asdadas\', \'123123\', \'123\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'sdadasdasd\', \'asdadas\', \'123123\', \'123\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (:idCa:, :nombre:, :descripcion:, :precio:, :stock:, :eliminado:)', [...], false)
+ 5 APPPATH\Models\ProductosModels.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ProductosController.php(73): App\Models\ProductosModels->guardar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:31:15 --> Undefined array key "http://localhost/CI/AddProducto"
+in APPPATH\Controllers\ProductosController.php on line 77.
+ 1 APPPATH\Controllers\ProductosController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "http://localhost/CI/AddProducto"', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:31:42 --> The route for "http://localhost/CI/AddProducto" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CI/AddProducto')
+ 2 SYSTEMPATH\Common.php(880): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ProductosController.php(77): redirect('http://localhost/CI/AddProducto')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:31:58 --> The route for "http://localhost/CI/AddProducto" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/CI/AddProducto')
+ 2 SYSTEMPATH\Common.php(880): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ProductosController.php(77): redirect('http://localhost/CI/AddProducto')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-10 20:33:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`productos`.`productos`, CONSTRAINT `productos_idCa_foreign` FOREIGN KEY (`idCa`) REFERENCES `categorias` (`idCa`) ON DELETE CASCADE ON UPDATE CASCADE) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 F:\xampp\htdocs\CI\app\Models\ProductosModels.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\CI\app\Controllers\ProductosController.php(74): App\Models\ProductosModels->guardar(Array)
+#6 F:\xampp\htdocs\CI\system\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+#7 F:\xampp\htdocs\CI\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+#8 F:\xampp\htdocs\CI\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\CI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-10 20:33:09 --> Cannot add or update a child row: a foreign key constraint fails (`productos`.`productos`, CONSTRAINT `productos_idCa_foreign` FOREIGN KEY (`idCa`) REFERENCES `categorias` (`idCa`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'ultimo\', \'asdasda\', \'12321\', \'123\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'ultimo\', \'asdasda\', \'12321\', \'123\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'ultimo\', \'asdasda\', \'12321\', \'123\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (:idCa:, :nombre:, :descripcion:, :precio:, :stock:, :eliminado:)', [...], false)
+ 5 APPPATH\Models\ProductosModels.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ProductosController.php(74): App\Models\ProductosModels->guardar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:51:14 --> Undefined variable $datos
+in APPPATH\Views\Inicio\index.php on line 20.
+ 1 APPPATH\Views\Inicio\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(21): view('Inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:51:47 --> Undefined variable $datos
+in APPPATH\Views\Inicio\index.php on line 20.
+ 1 APPPATH\Views\Inicio\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(21): view('Inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:52:05 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\index.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(21): view('Inicio/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:54:51 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\index.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(21): view('Inicio/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:55:51 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\index.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(21): view('Inicio/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:58:17 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Inicio\index.php on line 27.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(21): view('Inicio/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 20:59:34 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\Inicio\index.php on line 25.
+ 1 APPPATH\Views\Inicio\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(21): view('Inicio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 21:05:00 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\Inicio\index.php on line 20.
+ 1 APPPATH\Views\Inicio\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(21): view('Inicio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 21:05:11 --> Undefined property: stdClass::$Cantidad
+in APPPATH\Views\Inicio\index.php on line 27.
+ 1 APPPATH\Views\Inicio\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Cantidad', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(21): view('Inicio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 21:23:42 --> Undefined variable $datos
+in APPPATH\Views\Inicio\agregarProducto.php on line 16.
+ 1 APPPATH\Views\Inicio\agregarProducto.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(31): view('Inicio/agregarProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 21:24:20 --> Undefined variable $datos
+in APPPATH\Views\Inicio\agregarProducto.php on line 16.
+ 1 APPPATH\Views\Inicio\agregarProducto.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\agregarProducto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/agregarProducto', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(31): view('Inicio/agregarProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
