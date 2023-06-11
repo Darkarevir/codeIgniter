@@ -1,0 +1,325 @@
+CRITICAL - 2023-06-11 14:00:56 --> Call to undefined method App\Models\ProductosModels::inserttID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\ProductosController.php(83): CodeIgniter\Model->__call('inserttID', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-11 14:29:04 --> mysqli_sql_exception: Unknown column 'product_id' in 'field list' in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `de...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 F:\xampp\htdocs\CI\app\Models\DetalleProModels.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\CI\app\Controllers\ProductosController.php(96): App\Models\DetalleProModels->guardar(Array)
+#6 F:\xampp\htdocs\CI\system\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+#7 F:\xampp\htdocs\CI\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+#8 F:\xampp\htdocs\CI\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\CI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-11 14:29:04 --> Unknown column 'product_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `detalles_productos` (`product_id`, `color`, `peso`, `dimensiones`, `accion`) VALUES (20, \'transparente\', \'50kg\', \'50kg\', \'C\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detalles_productos` (`product_id`, `color`, `peso`, `dimensiones`, `accion`) VALUES (20, \'transparente\', \'50kg\', \'50kg\', \'C\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detalles_productos` (`product_id`, `color`, `peso`, `dimensiones`, `accion`) VALUES (20, \'transparente\', \'50kg\', \'50kg\', \'C\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detalles_productos` (`product_id`, `color`, `peso`, `dimensiones`, `accion`) VALUES (:product_id:, :color:, :peso:, :dimensiones:, :accion:)', [...], false)
+ 5 APPPATH\Models\DetalleProModels.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ProductosController.php(96): App\Models\DetalleProModels->guardar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-11 14:33:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`productos`.`productos`, CONSTRAINT `productos_idCa_foreign` FOREIGN KEY (`idCa`) REFERENCES `categorias` (`idCa`) ON DELETE CASCADE ON UPDATE CASCADE) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 F:\xampp\htdocs\CI\app\Models\ProductosModels.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\CI\app\Controllers\ProductosController.php(85): App\Models\ProductosModels->guardar(Array)
+#6 F:\xampp\htdocs\CI\system\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+#7 F:\xampp\htdocs\CI\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+#8 F:\xampp\htdocs\CI\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\CI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-11 14:33:21 --> Cannot add or update a child row: a foreign key constraint fails (`productos`.`productos`, CONSTRAINT `productos_idCa_foreign` FOREIGN KEY (`idCa`) REFERENCES `categorias` (`idCa`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'monkey flip\', \'es un monkey flip\', \'44\', \'44\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'monkey flip\', \'es un monkey flip\', \'44\', \'44\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'monkey flip\', \'es un monkey flip\', \'44\', \'44\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (:idCa:, :nombre:, :descripcion:, :precio:, :stock:, :eliminado:)', [...], false)
+ 5 APPPATH\Models\ProductosModels.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ProductosController.php(85): App\Models\ProductosModels->guardar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-11 14:40:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`productos`.`productos`, CONSTRAINT `productos_idCa_foreign` FOREIGN KEY (`idCa`) REFERENCES `categorias` (`idCa`) ON DELETE CASCADE ON UPDATE CASCADE) in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 F:\xampp\htdocs\CI\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 F:\xampp\htdocs\CI\app\Models\ProductosModels.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\CI\app\Controllers\ProductosController.php(85): App\Models\ProductosModels->guardar(Array)
+#6 F:\xampp\htdocs\CI\system\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+#7 F:\xampp\htdocs\CI\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+#8 F:\xampp\htdocs\CI\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\CI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-11 14:40:48 --> Cannot add or update a child row: a foreign key constraint fails (`productos`.`productos`, CONSTRAINT `productos_idCa_foreign` FOREIGN KEY (`idCa`) REFERENCES `categorias` (`idCa`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'\', \'\', \'\', \'\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'\', \'\', \'\', \'\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (\'\', \'\', \'\', \'\', \'\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`idCa`, `nombre`, `descripcion`, `precio`, `stock`, `eliminado`) VALUES (:idCa:, :nombre:, :descripcion:, :precio:, :stock:, :eliminado:)', [...], false)
+ 5 APPPATH\Models\ProductosModels.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ProductosController.php(85): App\Models\ProductosModels->guardar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->GuardarProducto()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 15:27:02 --> syntax error, unexpected identifier "print_r"
+in APPPATH\Controllers\ProductosController.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ProductosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 15:27:22 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\ProductosController.php(31): CodeIgniter\Model->__call('ObtenerProductoPorId', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 15:32:32 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\ProductosController.php(31): CodeIgniter\Model->__call('ObtenerProductoPorId', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 16:17:42 --> Undefined array key 0
+in APPPATH\Views\Inicio\ViewActualizar.php on line 56.
+ 1 APPPATH\Views\Inicio\ViewActualizar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/ViewActualizar', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(42): view('Inicio/ViewActualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 16:38:11 --> Undefined array key 0
+in APPPATH\Views\Inicio\ViewActualizar.php on line 56.
+ 1 APPPATH\Views\Inicio\ViewActualizar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/ViewActualizar', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(42): view('Inicio/ViewActualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 16:38:22 --> Undefined array key 0
+in APPPATH\Views\Inicio\ViewActualizar.php on line 56.
+ 1 APPPATH\Views\Inicio\ViewActualizar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/ViewActualizar', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(42): view('Inicio/ViewActualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 16:38:37 --> Undefined array key 0
+in APPPATH\Views\Inicio\ViewActualizar.php on line 56.
+ 1 APPPATH\Views\Inicio\ViewActualizar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/ViewActualizar', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(42): view('Inicio/ViewActualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 16:39:00 --> Undefined array key 0
+in APPPATH\Views\Inicio\ViewActualizar.php on line 56.
+ 1 APPPATH\Views\Inicio\ViewActualizar.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\ViewActualizar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/ViewActualizar', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(42): view('Inicio/ViewActualizar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-11 16:51:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT producto...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT producto...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT producto...')
+#3 F:\xampp\htdocs\CI\app\Models\ListadeProductos.php(19): CodeIgniter\Database\BaseConnection->query('SELECT producto...')
+#4 F:\xampp\htdocs\CI\app\Controllers\ProductosController.php(31): App\Models\ListadeProductos->ObtenerProductoPorId(NULL)
+#5 F:\xampp\htdocs\CI\system\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+#6 F:\xampp\htdocs\CI\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+#7 F:\xampp\htdocs\CI\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\xampp\htdocs\CI\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-11 16:51:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT productos.idCa, productos.nombre, productos.descripcion, productos.precio, productos.stock, detalles_productos.color, detalles_productos.peso, detalles_productos.dimensiones  FROM productos INNER JOIN detalles_productos ON productos.id = detalles_productos.producto_id WHERE productos.id =', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT productos.idCa, productos.nombre, productos.descripcion, productos.precio, productos.stock, detalles_productos.color, detalles_productos.peso, detalles_productos.dimensiones  FROM productos INNER JOIN detalles_productos ON productos.id = detalles_productos.producto_id WHERE productos.id =')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT productos.idCa, productos.nombre, productos.descripcion, productos.precio, productos.stock, detalles_productos.color, detalles_productos.peso, detalles_productos.dimensiones  FROM productos INNER JOIN detalles_productos ON productos.id = detalles_productos.producto_id WHERE productos.id =')
+ 4 APPPATH\Models\ListadeProductos.php(19): CodeIgniter\Database\BaseConnection->query('SELECT productos.idCa, productos.nombre, productos.descripcion, productos.precio, productos.stock, detalles_productos.color, detalles_productos.peso, detalles_productos.dimensiones  FROM productos INNER JOIN detalles_productos ON productos.id = detalles_productos.producto_id WHERE productos.id =')
+ 5 APPPATH\Controllers\ProductosController.php(31): App\Models\ListadeProductos->ObtenerProductoPorId(null)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-11 16:52:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 F:\xampp\htdocs\CI\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT producto...', 0)
+#1 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT producto...')
+#2 F:\xampp\htdocs\CI\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT producto...')
+#3 F:\xampp\htdocs\CI\app\Models\ListadeProductos.php(19): CodeIgniter\Database\BaseConnection->query('SELECT producto...')
+#4 F:\xampp\htdocs\CI\app\Controllers\ProductosController.php(31): App\Models\ListadeProductos->ObtenerProductoPorId(NULL)
+#5 F:\xampp\htdocs\CI\system\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+#6 F:\xampp\htdocs\CI\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+#7 F:\xampp\htdocs\CI\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\xampp\htdocs\CI\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-11 16:52:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT productos.idCa, productos.nombre, productos.descripcion, productos.precio, productos.stock, detalles_productos.color, detalles_productos.peso, detalles_productos.dimensiones  FROM productos INNER JOIN detalles_productos ON productos.id = detalles_productos.producto_id WHERE productos.id =', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT productos.idCa, productos.nombre, productos.descripcion, productos.precio, productos.stock, detalles_productos.color, detalles_productos.peso, detalles_productos.dimensiones  FROM productos INNER JOIN detalles_productos ON productos.id = detalles_productos.producto_id WHERE productos.id =')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT productos.idCa, productos.nombre, productos.descripcion, productos.precio, productos.stock, detalles_productos.color, detalles_productos.peso, detalles_productos.dimensiones  FROM productos INNER JOIN detalles_productos ON productos.id = detalles_productos.producto_id WHERE productos.id =')
+ 4 APPPATH\Models\ListadeProductos.php(19): CodeIgniter\Database\BaseConnection->query('SELECT productos.idCa, productos.nombre, productos.descripcion, productos.precio, productos.stock, detalles_productos.color, detalles_productos.peso, detalles_productos.dimensiones  FROM productos INNER JOIN detalles_productos ON productos.id = detalles_productos.producto_id WHERE productos.id =')
+ 5 APPPATH\Controllers\ProductosController.php(31): App\Models\ListadeProductos->ObtenerProductoPorId(null)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 16:53:55 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::get()
+in APPPATH\Controllers\ProductosController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->SeeAndEdit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:15:07 --> Call to undefined method App\Models\ProductosModels::UpdateProducto
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\ProductosController.php(150): CodeIgniter\Model->__call('UpdateProducto', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->UpdateProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:17:50 --> Call to undefined method App\Models\ProductosModels::UpdateProducto
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\ProductosController.php(150): CodeIgniter\Model->__call('UpdateProducto', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->UpdateProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:20:16 --> Call to undefined method App\Models\ProductosModels::UpdateProducto
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\ProductosController.php(150): CodeIgniter\Model->__call('UpdateProducto', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->UpdateProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:22:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\ProductosModels.php on line 32.
+ 1 APPPATH\Controllers\ProductosController.php(150): App\Models\ProductosModels->actualizarProducto('27', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->UpdateProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:23:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\ProductosModels.php on line 32.
+ 1 APPPATH\Controllers\ProductosController.php(150): App\Models\ProductosModels->actualizarProducto('27', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->UpdateProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:27:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::set()
+in APPPATH\Models\ProductosModels.php on line 32.
+ 1 APPPATH\Controllers\ProductosController.php(150): App\Models\ProductosModels->actualizarProducto('27', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->UpdateProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:30:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\ProductosModels.php on line 32.
+ 1 APPPATH\Controllers\ProductosController.php(150): App\Models\ProductosModels->actualizarProducto('27', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->UpdateProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:31:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+in APPPATH\Models\ProductosModels.php on line 33.
+ 1 APPPATH\Controllers\ProductosController.php(150): App\Models\ProductosModels->actualizarProducto('27', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->UpdateProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:36:04 --> Call to a member function where() on bool
+in APPPATH\Models\ProductosModels.php on line 33.
+ 1 APPPATH\Controllers\ProductosController.php(150): App\Models\ProductosModels->actualizarProducto('27', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->UpdateProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:51:35 --> Undefined variable $a
+in APPPATH\Controllers\ProductosController.php on line 18.
+ 1 APPPATH\Controllers\ProductosController.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $a', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 17:52:21 --> Undefined variable $owo
+in APPPATH\Controllers\ProductosController.php on line 18.
+ 1 APPPATH\Controllers\ProductosController.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $owo', 'F:\\xampp\\htdocs\\CI\\app\\Controllers\\ProductosController.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 18:02:56 --> Undefined variable $datos
+in APPPATH\Views\Inicio\index.php on line 20.
+ 1 APPPATH\Views\Inicio\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(27): view('Inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 18:09:01 --> Undefined constant "datos"
+in APPPATH\Views\Inicio\index.php on line 20.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 4 APPPATH\Controllers\ProductosController.php(27): view('Inicio/index')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 18:09:12 --> Undefined variable $datos
+in APPPATH\Views\Inicio\index.php on line 20.
+ 1 APPPATH\Views\Inicio\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('F:\\xampp\\htdocs\\CI\\app\\Views\\Inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Inicio/index', [], true)
+ 5 APPPATH\Controllers\ProductosController.php(27): view('Inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductosController->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

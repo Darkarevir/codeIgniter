@@ -14,7 +14,7 @@ class ProductosModels extends Model{
         'descripcion',
         'precio',
         'stock',
-        'eliminado',
+        'eliminado'
     ];
 
     public function guardar($datos){
@@ -22,6 +22,27 @@ class ProductosModels extends Model{
         $this->db->table('productos')->insert($datos);
 
         if ($this->db->affectedRows()>0) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function actualizarProducto($id, $datos){
+        //$this->db->table('productos')->where('id', $id);
+        $this->db->table('productos')->where('id', $id)->update($datos);
+
+        if($this->db->affectedRows() > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function deleteProducto($id, $datos){
+        $this->db->table('productos')->where('id', $id)->update($datos);
+
+        if($this->db->affectedRows() > 0){
             return true;
         }else{
             return false;

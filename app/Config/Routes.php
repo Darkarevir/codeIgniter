@@ -35,7 +35,9 @@ $routes->get('/categorias', 'CategoriasController::categorias');
 $routes->get('/inicio', 'ProductosController::inicio');
 $routes->get('/AddProducto', 'ProductosController::AgregarProductos');
 $routes->post('/Save', 'ProductosController::GuardarProducto');
-$routes->post('/historial', 'ProductosController::SeeAndEdit');
+$routes->post('/Update', 'ProductosController::UpdateProducto');
+$routes->get('/historial', 'ProductosController::SeeAndEdit');
+$routes->get('/delete', 'ProductosController::BorrarProducto');
 
 
 /*

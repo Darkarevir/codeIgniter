@@ -2,6 +2,8 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
 </script>
 
+
+
 <script>
 function validarEnteroPositivo(input) {
     var valor = parseInt(input.value);

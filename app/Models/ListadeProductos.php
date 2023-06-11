@@ -14,4 +14,10 @@ class ListadeProductos extends Model{
     public function SeeProductos($id){
         
     }
+
+    public function ObtenerProductoPorId($idData){
+        $productoConDetalle = $this->db->query('SELECT productos.idCa, productos.nombre, productos.descripcion, productos.precio, productos.stock, detalles_productos.color, detalles_productos.peso, detalles_productos.dimensiones  FROM productos INNER JOIN detalles_productos ON productos.id = detalles_productos.producto_id WHERE productos.id ='.$idData);
+        return $productoConDetalle->getResult();
+    }
+
 }

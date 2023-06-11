@@ -4,31 +4,16 @@
 
         </div>
         <div class="col-8">
-            <form method="POST" action="<?php echo base_url(); ?>Save">
+            <form method="POST" action="<?php echo base_url(); ?>Update">
                 <div class="mb-3">
                     <p></p>
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
                     <label for="Categoria" class="form-label selectpicker">Categoria</label>
                     <select name="categoria" id="categoria" class="form-control">
-                        <?php foreach($datos as $categoria): ?>
+                        <?php foreach($categor as $categoria): ?>
                         <option value="<?php echo $categoria->idCa; ?>"><?php echo $categoria->nombre; ?></option>
                         <?php endforeach; ?>
                     </select>
-                    <!-- <div class="dropdown" required>
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <span id="categoriaSeleccionadaTexto">Categoria</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <?php foreach ($datos as $proveedor): ?>
-                            <li><a class="dropdown-item" href="#"
-                                    onclick="seleccionarCategoria(<?php echo $proveedor->idCa; ?>, '<?php echo $proveedor->nombre; ?>')"><?php echo $proveedor->nombre; ?></a>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div> -->
-
-                    <input type="hidden" name="idCa" id="idCa" value="" required>
-
                     <label for="Nombre del Producto" class="form-label">Nombre del Producto</label>
                     <input class="form-control" name="Producto" type="text" placeholder="Nombre del Producto"
                         aria-label="Nombre del Producto" required>
@@ -61,11 +46,20 @@
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+
 <script>
-function seleccionarCategoria(idCa, nombre) {
-    document.getElementById('idCa').value = idCa;
-    document.getElementById('categoriaSeleccionadaTexto').textContent = nombre;
-    console.log(idCa)
-    console.log(document.getElementById('idCa').value)
-}
+const data = <?php echo json_encode($producto[0]); ?>;
+console.log(data);
+
+$('input[name=Producto]').val(data.nombre);
+$('input[name=Descripcion]').val(data.descripcion);
+$('input[name=Precio]').val(data.precio);
+$('input[name=Cantidad]').val(data.stock);
+$('input[name=Color]').val(data.color);
+$('input[name=Peso]').val(data.peso);
+$('input[name=Dimensiones]').val(data.dimensiones);
+$('#categoria').val(data.idCa);
 </script>
